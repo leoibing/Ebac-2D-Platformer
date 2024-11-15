@@ -1641,7 +1641,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1421637516180300482, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_Name
-      value: PFB_Credits
+      value: PFB_About
       objectReference: {fileID: 0}
     - target: {fileID: 1421637516180300483, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_Pivot.x
@@ -1729,11 +1729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1421637516180300484, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1421637516311632332, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_text
-      value: Credits
+      value: About
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
@@ -2895,6 +2895,18 @@ PrefabInstance:
     - target: {fileID: 1421637516180300484, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421637516180300485, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.41960788
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421637516180300485, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6419823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421637516180300485, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1421637516311632332, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_text
@@ -4168,6 +4180,14 @@ PrefabInstance:
     - target: {fileID: 1421637516180300484, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421637516180300485, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.41960788
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421637516180300485, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6824191
       objectReference: {fileID: 0}
     - target: {fileID: 1421637516311632332, guid: b59071fb3b7406d42b7a278baa2ba03d, type: 3}
       propertyPath: m_text
