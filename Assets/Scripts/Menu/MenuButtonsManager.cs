@@ -8,6 +8,7 @@ public class MenuButtonsManager : MonoBehaviour
 {
 	public List<GameObject> buttons;
 
+	[Header("Animation")]
 	public float duration = 0.2f;
 	public float delay = 0.5f;
 	public Ease ease = Ease.OutBack;

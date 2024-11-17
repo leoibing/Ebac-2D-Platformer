@@ -653,6 +653,9 @@ MonoBehaviour:
   - {fileID: 8763598642799732872}
   - {fileID: 3599279343249421193}
   startPoint: {fileID: 181411113}
+  duration: 0.2
+  delay: 1
+  ease: 27
 --- !u!4 &424417477
 Transform:
   m_ObjectHideFlags: 0
