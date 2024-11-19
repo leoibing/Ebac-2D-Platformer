@@ -202,7 +202,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 9072440100847685840}
   m_Bounds:
-    m_Center: {x: 0.14424229, y: -0.12601662, z: 0}
+    m_Center: {x: 0.14424515, y: -0.12601662, z: 0}
     m_Extent: {x: 0.51411974, y: 0.57256997, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -320,10 +320,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8073972946613542793}
   - component: {fileID: 2403329696302037006}
-  - component: {fileID: 8760051302656440665}
-  - component: {fileID: 8763598642799732873}
-  - component: {fileID: 8763598642799732874}
-  - component: {fileID: 8763598642799732875}
+  - component: {fileID: 1150277253537807604}
+  - component: {fileID: 7022121701510712041}
+  - component: {fileID: 3426858236140556017}
   m_Layer: 0
   m_Name: PFB_Enemy_1
   m_TagString: Untagged
@@ -373,18 +372,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!210 &8760051302656440665
-SortingGroup:
+--- !u!61 &1150277253537807604
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3090786764695304946}
   m_Enabled: 1
-  m_SortingLayerID: -957492171
-  m_SortingLayer: 1
-  m_SortingOrder: 0
---- !u!50 &8763598642799732873
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.047273636, y: 3.6225076}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.7608757, y: 6.041394}
+  m_EdgeRadius: 0
+--- !u!50 &7022121701510712041
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -405,33 +419,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!61 &8763598642799732874
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090786764695304946}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02861762, y: 3.6856365}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.945585, y: 6.0254173}
-  m_EdgeRadius: 0
---- !u!114 &8763598642799732875
+--- !u!114 &3426858236140556017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,7 +561,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 8392671563515255418}
   m_Bounds:
-    m_Center: {x: -0.0000009536743, y: 0.0000009536743, z: 0}
+    m_Center: {x: -0.0000038146973, y: 0.0000009536743, z: 0}
     m_Extent: {x: 0.48000008, y: 0.3300001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -832,7 +820,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4031394395824172508}
   m_Bounds:
-    m_Center: {x: -0.0000019073486, y: -0.00000047683716, z: 0}
+    m_Center: {x: 0, y: -0.00000047683716, z: 0}
     m_Extent: {x: 0.31000012, y: 0.40000013, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1038,7 +1026,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 3224396904485084758}
   m_Bounds:
-    m_Center: {x: -0.0000009536743, y: 0.0000014305115, z: 0}
+    m_Center: {x: 0, y: 0.0000014305115, z: 0}
     m_Extent: {x: 0.23500009, y: 0.40500003, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1141,7 +1129,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 9196861913604587219}
   m_Bounds:
-    m_Center: {x: -0.0000009536743, y: 0.00000047683716, z: 0}
+    m_Center: {x: 0, y: 0.00000047683716, z: 0}
     m_Extent: {x: 0.21000005, y: 0.4100001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

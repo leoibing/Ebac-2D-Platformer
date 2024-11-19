@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 300597555843645670}
   m_Bounds:
-    m_Center: {x: -0.20048273, y: -0.024879932, z: 0}
+    m_Center: {x: -0.20048225, y: -0.024879932, z: 0}
     m_Extent: {x: 0.8514705, y: 0.27652827, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7475299985159222176}
   m_Bounds:
-    m_Center: {x: -0.23433328, y: 0.019141674, z: 0}
+    m_Center: {x: -0.23433352, y: 0.019141674, z: 0}
     m_Extent: {x: 0.25723973, y: 0.4174857, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -349,10 +349,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2944973745361044811}
   - component: {fileID: 3122169294817524646}
-  - component: {fileID: 8877638571945085607}
-  - component: {fileID: 3599279343249421194}
-  - component: {fileID: 3599279343249421195}
-  - component: {fileID: 3599279343249421196}
+  - component: {fileID: 3005627353833726112}
+  - component: {fileID: 4042461772006794800}
+  - component: {fileID: 5381820641760942410}
   m_Layer: 0
   m_Name: PFB_Enemy_2
   m_TagString: Untagged
@@ -403,18 +402,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!210 &8877638571945085607
-SortingGroup:
+--- !u!61 &3005627353833726112
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3176744783887258002}
   m_Enabled: 1
-  m_SortingLayerID: -957492171
-  m_SortingLayer: 1
-  m_SortingOrder: 0
---- !u!50 &3599279343249421194
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.047273636, y: 3.6225076}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.7608757, y: 6.041394}
+  m_EdgeRadius: 0
+--- !u!50 &4042461772006794800
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -435,33 +449,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!61 &3599279343249421195
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3176744783887258002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02861762, y: 3.6856365}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.945585, y: 6.0254173}
-  m_EdgeRadius: 0
---- !u!114 &3599279343249421196
+--- !u!114 &5381820641760942410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,7 +696,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 907292751167566779}
   m_Bounds:
-    m_Center: {x: -0.23896408, y: -0.06505871, z: 0}
+    m_Center: {x: -0.23896384, y: -0.06505871, z: 0}
     m_Extent: {x: 0.2325578, y: 0.4210825, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1004,7 +992,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6350850424991882273}
   m_Bounds:
-    m_Center: {x: -0.26991343, y: -0.05698538, z: 0}
+    m_Center: {x: -0.26991367, y: -0.05698538, z: 0}
     m_Extent: {x: 0.33184385, y: 0.41667995, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1137,7 +1125,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 300597555843645670}
   m_Bounds:
-    m_Center: {x: -0.18097448, y: -0.021264076, z: 0}
+    m_Center: {x: -0.18097425, y: -0.021264076, z: 0}
     m_Extent: {x: 0.9259788, y: 0.6290525, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
