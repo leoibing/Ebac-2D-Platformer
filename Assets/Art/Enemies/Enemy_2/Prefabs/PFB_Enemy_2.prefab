@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 300597555843645670}
   m_Bounds:
-    m_Center: {x: -0.20048225, y: -0.024879932, z: 0}
+    m_Center: {x: -0.20048201, y: -0.024878979, z: 0}
     m_Extent: {x: 0.8514705, y: 0.27652827, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6484252745392008132}
   m_Bounds:
-    m_Center: {x: -0.26485538, y: 0.021921158, z: 0}
+    m_Center: {x: -0.26485634, y: 0.021920681, z: 0}
     m_Extent: {x: 0.49767154, y: 0.35627803, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7475299985159222176}
   m_Bounds:
-    m_Center: {x: -0.23433352, y: 0.019141674, z: 0}
+    m_Center: {x: -0.23433185, y: 0.019141197, z: 0}
     m_Extent: {x: 0.25723973, y: 0.4174857, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 3005627353833726112}
   - component: {fileID: 4042461772006794800}
   - component: {fileID: 5381820641760942410}
+  - component: {fileID: 3909079588951319090}
   m_Layer: 0
   m_Name: PFB_Enemy_2
   m_TagString: Untagged
@@ -462,6 +463,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!210 &3909079588951319090
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176744783887258002}
+  m_Enabled: 1
+  m_SortingLayerID: -728771455
+  m_SortingLayer: 1
+  m_SortingOrder: 0
 --- !u!1 &3257322378915922041
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +605,7 @@ MonoBehaviour:
   - {fileID: 3766772923177649577}
   - {fileID: 176777962350426656}
   m_Bounds:
-    m_Center: {x: -0.048374414, y: 0.008624077, z: 0}
+    m_Center: {x: -0.048374176, y: 0.008624554, z: 0}
     m_Extent: {x: 2.919138, y: 3.357589, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -696,7 +708,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 907292751167566779}
   m_Bounds:
-    m_Center: {x: -0.23896384, y: -0.06505871, z: 0}
+    m_Center: {x: -0.23896503, y: -0.065059185, z: 0}
     m_Extent: {x: 0.2325578, y: 0.4210825, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1125,7 +1137,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 300597555843645670}
   m_Bounds:
-    m_Center: {x: -0.18097425, y: -0.021264076, z: 0}
+    m_Center: {x: -0.180974, y: -0.0212636, z: 0}
     m_Extent: {x: 0.9259788, y: 0.6290525, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
