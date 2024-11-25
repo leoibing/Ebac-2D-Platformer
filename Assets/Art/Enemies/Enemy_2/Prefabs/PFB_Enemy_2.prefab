@@ -353,6 +353,8 @@ GameObject:
   - component: {fileID: 4042461772006794800}
   - component: {fileID: 5381820641760942410}
   - component: {fileID: 3909079588951319090}
+  - component: {fileID: 713322401372386893}
+  - component: {fileID: 3599279343249421195}
   m_Layer: 0
   m_Name: PFB_Enemy_2
   m_TagString: Untagged
@@ -444,7 +446,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -465,6 +467,7 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 3122169294817524646}
   triggerAttack: Attack
+  healthBase: {fileID: 713322401372386893}
 --- !u!210 &3909079588951319090
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -476,6 +479,44 @@ SortingGroup:
   m_SortingLayerID: -728771455
   m_SortingLayer: 1
   m_SortingOrder: 0
+--- !u!114 &713322401372386893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176744783887258002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de99d1403195a64cbe7eb261bb73a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLife: 10
+  destroyOnKill: 1
+  delayToKill: 0
+  _flashColor: {fileID: 0}
+--- !u!114 &3599279343249421195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176744783887258002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8412c931d72cdbb47934542502ab8a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderers:
+  - {fileID: 3562818169227747833}
+  - {fileID: 7803505671189439292}
+  - {fileID: 444083526418024891}
+  - {fileID: 7779900026986254017}
+  - {fileID: 8779633609815029051}
+  - {fileID: 1181539698875460310}
+  - {fileID: 6176580827313767728}
+  color: {r: 1, g: 0.5896226, b: 0.5896226, a: 1}
+  duration: 0.3
 --- !u!1 &3257322378915922041
 GameObject:
   m_ObjectHideFlags: 0
