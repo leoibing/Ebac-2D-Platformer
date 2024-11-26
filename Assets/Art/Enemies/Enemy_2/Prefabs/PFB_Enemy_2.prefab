@@ -467,7 +467,9 @@ MonoBehaviour:
   damage: 10
   animator: {fileID: 3122169294817524646}
   triggerAttack: Attack
+  trigerDeath: Death
   healthBase: {fileID: 713322401372386893}
+  timeToDestroy: 1
 --- !u!210 &3909079588951319090
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -492,9 +494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLife: 10
-  destroyOnKill: 1
+  destroyOnKill: 0
   delayToKill: 0
-  _flashColor: {fileID: 0}
+  _flashColor: {fileID: 3599279343249421195}
 --- !u!114 &3599279343249421195
 MonoBehaviour:
   m_ObjectHideFlags: 0
