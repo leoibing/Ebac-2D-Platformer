@@ -6,7 +6,7 @@ using Singleton;
 
 public class UIInGameManager : Singleton<UIInGameManager>
 {
-	public TMP_Text uiTextCoins;
+	public TextMeshProUGUI uiTextCoins;
 
 	public static void UpdateTextCoins(string s)
 	{
