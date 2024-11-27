@@ -8,7 +8,7 @@ public class ItemManager : Singleton<ItemManager>
 {
 	public int coins;
 
-	public TMP_Text coinText;
+	//public TMP_Text uiTextCoins;
 
 	private void Start()
 	{
@@ -18,11 +18,18 @@ public class ItemManager : Singleton<ItemManager>
 	private void Reset()
 	{
 		coins = 0;
+		UpdateUI();
 	}
 
 	public void AddCoins(int amount = 1)
 	{
 		coins += amount;
-		coinText.text = coins.ToString();
+		UpdateUI();
+	}
+
+	private void UpdateUI()
+	{
+		//uiTextCoins.text = coins.ToString();
+		UIInGameManager.UpdateTextCoins(coins.ToString());
 	}
 }
