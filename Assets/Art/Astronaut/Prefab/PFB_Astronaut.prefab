@@ -964,6 +964,7 @@ GameObject:
   - component: {fileID: 5031956120827880208}
   - component: {fileID: 6726547633430058457}
   - component: {fileID: 1196930752}
+  - component: {fileID: 899521194}
   m_Layer: 0
   m_Name: PFB_Astronaut
   m_TagString: Player
@@ -1073,6 +1074,9 @@ MonoBehaviour:
   jumpScaleY: 1.1
   jumpScaleX: 0.8
   animationDuration: 0.3
+  soJumpScaleY: {fileID: 11400000, guid: 25388eef250ffb94e8662a97038cd420, type: 2}
+  soJumpScaleX: {fileID: 11400000, guid: 29daea3a518edc44b8b00e07f470414e, type: 2}
+  soAnimationDuration: {fileID: 11400000, guid: e530168e44a6fbd43928edca6277675e, type: 2}
   ease: 27
   boolRun: Run
   boolJump: Jump
@@ -1140,6 +1144,19 @@ MonoBehaviour:
   - {fileID: 7718624693209762858}
   color: {r: 1, g: 0.5613208, b: 0.5613208, a: 1}
   duration: 0.5
+--- !u!114 &899521194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835229685202505509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa6e7a0d16bed441a6887893d9568b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5790447825513800735}
 --- !u!1001 &2987335437580250577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1573,6 +1590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -5182012352979194097, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
+--- !u!212 &3971700845632200199 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2191974428104897494, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
+  m_PrefabInstance: {fileID: 2987335437580250577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2616809535132260505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 947413611075204424, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
@@ -1601,11 +1623,6 @@ Transform:
 --- !u!212 &7301150156096908687 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -3735805559633772450, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
-  m_PrefabInstance: {fileID: 2987335437580250577}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &3971700845632200199 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2191974428104897494, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
   m_PrefabInstance: {fileID: 2987335437580250577}
   m_PrefabAsset: {fileID: 0}
 --- !u!212 &5842915932965311795 stripped
