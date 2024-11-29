@@ -1018,11 +1018,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cfda088e3012e194081406d872cea766, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1036,7 +1036,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8835229685202505509}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cfda088e3012e194081406d872cea766, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1067,22 +1067,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5790447825513800734}
   healthBase: {fileID: 5031956120827880208}
-  friction: {x: 0.2, y: 0}
-  speed: 10
-  speedRun: 21
-  forceJump: 20
-  jumpScaleY: 1.1
-  jumpScaleX: 0.8
-  animationDuration: 0.3
-  soJumpScaleY: {fileID: 11400000, guid: 25388eef250ffb94e8662a97038cd420, type: 2}
-  soJumpScaleX: {fileID: 11400000, guid: 29daea3a518edc44b8b00e07f470414e, type: 2}
-  soAnimationDuration: {fileID: 11400000, guid: e530168e44a6fbd43928edca6277675e, type: 2}
-  ease: 27
-  boolRun: Run
-  boolJump: Jump
-  triggerDeath: Death
+  soPlayerSetup: {fileID: 11400000, guid: fbbcf1f53f8803c4bbb594145e808959, type: 2}
   animator: {fileID: 6413013834153556191}
-  playerSwipeDuration: 0.1
 --- !u!114 &5031956120827880208
 MonoBehaviour:
   m_ObjectHideFlags: 0
