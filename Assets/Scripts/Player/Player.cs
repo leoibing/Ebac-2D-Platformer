@@ -11,33 +11,10 @@ public class Player : MonoBehaviour
 	[Header("Setup")]
 	public SOPlayerSetup soPlayerSetup;
 
-	/*[Header("Speed setup")]
-	public Vector2 friction = new Vector2(.1f, 0);
-	public float speed;
-	public float speedRun;
-	public float forceJump = 2;
-
-	[Header("Animation setup")]
-	public float jumpScaleY = 1.4f;
-	public float jumpScaleX = .7f;
-	public float animationDuration = .3f;
-	public SOFloat soJumpScaleY;
-	public SOFloat soJumpScaleX;
-	public SOFloat soAnimationDuration;
-
-
-	public Ease ease = Ease.OutBack;
-
-	[Header("Animation player")]
-	public string boolRun = "Run";
-	public string boolJump = "Jump";
-	public string triggerDeath = "Death";
-	public float playerSwipeDuration = .1f;*/
-
-	public Animator animator;
-
 	private float _currentSpeed;
 	//private bool _isRunning;
+
+	private Animator _currentPlayer;
 
 	private void Awake()
 	{
@@ -45,12 +22,14 @@ public class Player : MonoBehaviour
 		{
 			healthBase.OnKill += OnPlayerKill;
 		}
+
+		_currentPlayer = Instantiate(soPlayerSetup.player, transform);
 	}
 
 	private void OnPlayerKill()
 	{
 		healthBase.OnKill -= OnPlayerKill;
-		animator.SetTrigger(soPlayerSetup.triggerDeath);
+		_currentPlayer.SetTrigger(soPlayerSetup.triggerDeath);
 	}
 
 	private void OnValidate()
@@ -58,8 +37,8 @@ public class Player : MonoBehaviour
 		if (rb == null)
 			rb = GetComponent<Rigidbody2D>();
 
-		if (animator == null)
-			animator = GetComponent<Animator>();
+		if (_currentPlayer == null)
+			_currentPlayer = GetComponent<Animator>();
 	}
 
 	private void Update()
@@ -73,12 +52,12 @@ public class Player : MonoBehaviour
 		if (Input.GetKey(KeyCode.LeftControl))
 		{
 			_currentSpeed = soPlayerSetup.speedRun;
-			animator.speed = 2;
+			_currentPlayer.speed = 2;
 		}
 		else
 		{
 			_currentSpeed = soPlayerSetup.speed;
-			animator.speed = 1;
+			_currentPlayer.speed = 1;
 		}
 
 		//_isRunning = Input.GetKey(KeyCode.LeftControl);
@@ -90,7 +69,7 @@ public class Player : MonoBehaviour
 			{
 				rb.transform.DOScaleX(-1, soPlayerSetup.playerSwipeDuration);
 			}
-			animator.SetBool(soPlayerSetup.boolRun, true);
+			_currentPlayer.SetBool(soPlayerSetup.boolRun, true);
 		}
 		else if (Input.GetKey(KeyCode.RightArrow))
 		{
@@ -101,12 +80,12 @@ public class Player : MonoBehaviour
 				rb.transform.DOScaleX(1, soPlayerSetup.playerSwipeDuration);
 			}
 			//rb.transform.localScale = new Vector2(1, 1);
-			animator.SetBool(soPlayerSetup.boolRun, true);
+			_currentPlayer.SetBool(soPlayerSetup.boolRun, true);
 			//rb.velocity = new Vector2(Input.GetKey(KeyCode.LeftControl) ? speed : speedRun, rb.velocity.y);
 		}
 		else
 		{
-			animator.SetBool(soPlayerSetup.boolRun, false);
+			_currentPlayer.SetBool(soPlayerSetup.boolRun, false);
 		}
 
 		if (rb.velocity.x > 0)
@@ -125,14 +104,14 @@ public class Player : MonoBehaviour
 		{
 			rb.velocity = Vector2.up * soPlayerSetup.forceJump;
 			rb.transform.localScale = Vector2.one;
-			animator.SetBool(soPlayerSetup.boolJump, true);
+			_currentPlayer.SetBool(soPlayerSetup.boolJump, true);
 
 			DOTween.Kill(rb.transform);
 			HandleScaleJump();
 		}
 		else
 		{
-			animator.SetBool(soPlayerSetup.boolJump, false);
+			_currentPlayer.SetBool(soPlayerSetup.boolJump, false);
 		}
 	}
 
