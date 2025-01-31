@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class ItemCollectableCoin : ItemCollectableBase
 {
+	public SOInt amount;
+
 	protected override void OnCollect()
 	{
 		base.OnCollect();
-		ItemManager.instance.AddCoins();
+		if (amount != null)
+			ItemManager.instance.AddCoins(amount.value);
 	}
 }

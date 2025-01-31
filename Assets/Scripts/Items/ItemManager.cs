@@ -8,7 +8,7 @@ public class ItemManager : Singleton<ItemManager>
 {
 	public SOInt coins;
 
-	//public TMP_Text uiTextCoins;
+	//public TextMeshProUGUI uiTextCoins;
 
 	private void Start()
 	{
@@ -21,7 +21,7 @@ public class ItemManager : Singleton<ItemManager>
 		UpdateUI();
 	}
 
-	public void AddCoins(int amount = 1)
+	public void AddCoins(int amount)
 	{
 		coins.value += amount;
 		UpdateUI();
